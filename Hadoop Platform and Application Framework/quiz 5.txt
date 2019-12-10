@@ -6,6 +6,8 @@ A: dfs.replication
 
 Q:Check answers that apply when replication is lowered
 A: HDFS is less robust
+   Less likely that data will be local to more workers
+   Hdfs will have more space available
 
 
 Q:Check answers that apply when NameNode fails to receive heartbeat from a DataNode
@@ -13,3 +15,4 @@ A:
 
 Q:How is data corruption mitigated in HDFS
 A:Data from all replicas is compared for correctness
+  Ckhecksums are computed on file creation and stored in HDFS namespace for verification when data is retrieved
