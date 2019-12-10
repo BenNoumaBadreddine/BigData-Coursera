@@ -1,12 +1,22 @@
 Q:Which of the following are valid access mechanisms for HDFS
-A:Accessed via Java API,Accessed via HTTP
+A:Accessed via Java API,Accessed via HTTP, can be accessed via hdfs binary/script, mounted as a filesystem using NFS gateway
 
-invalid command:
+Q: invalid command:
 cp -r /user/data /user/test/
 
 
-to get status: hdfs dfsadmin -report
+Q: To get status: 
+A: hdfs dfsadmin -report
 
 
 
-Which of the following is not a method in FSDataInputStream:
+Q: Which of the following is not a method in FSDataInputStream:
+A: hfulsh
+
+Q: You can only read data in HDFS via HTTP
+A: False
+
+Q: What are some webhdfs REST API related parameters in HDFS
+A:dfs.webhdfs.enabled
+  dfs.web.authentification.kerberos.keytab
+
